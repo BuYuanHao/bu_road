@@ -1,0 +1,12 @@
+# value 不能为空
+
+产生二义性，不能确定是没有这个key还是这个key没有映射；
+
+# key不能为空
+
+1. var value=HashMap.get(key)中，无法判断是否存在对应value值还是key对应value就是null，而如果使用 if(HashMap.ContainsKey(key)) var value=HashMap.get(key);这样两步代码，就无法保证并发带来无限可能性
+2. 第一就语义：有什么必要把“没有东西”放进容器？把“没有东西”的东西放进容器，那是放进什么了？
+    第二就是底层实现：对于集合而言，每一个对象都有对应的索引的， key为null那如何计算索引？都算不出来索引哦？那该把他放哪里？
+
+# tips
+可以定义一个名称为NULL的全局的Object。当需要用null值的时候，用这个NULL来代替，以假乱真。

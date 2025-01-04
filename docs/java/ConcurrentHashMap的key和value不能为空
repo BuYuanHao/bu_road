@@ -10,3 +10,8 @@
 
 # tips
 可以定义一个名称为NULL的全局的Object。当需要用null值的时候，用这个NULL来代替，以假乱真。
+
+
+1、无法添加元素 https://blog.csdn.net/xbinbin88/article/details/135260306
+2、强制索引 https://www.cnblogs.com/lkj371/p/17654325.html
+3、任务编排 https://juejin.cn/post/7394992701803462696

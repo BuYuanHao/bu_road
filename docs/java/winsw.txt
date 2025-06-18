@@ -1,0 +1,8 @@
+1、jps 查看服务状态
+2、jstat 信息实时监控 
+3、jinfo 查看、修改配置信息
+4、jmap -dump:live,format=b,file=D:/1.hprof 24956
+jmap -histo:live
+jmap -heap
+5、 jhat  html形式查看
+6、jstack 查看线程
